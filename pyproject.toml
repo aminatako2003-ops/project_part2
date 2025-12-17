@@ -1,0 +1,23 @@
+[project]
+name = "chempkg"
+version = "0.1.0"
+authors = [
+  { name = "Aminata Kone", email = "aminatako2003@gmail.com" },
+]
+description = "Package projet"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "matplotlib >=3.10.7",
+  "pandas >=2.3.3",
+  "pytest",
+]
+
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["chempkg"]
+
+[tool.setuptools.package-data]
+chempkg = ["*"]
